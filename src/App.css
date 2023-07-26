@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  height: 100vh;
 }
 
 .App-logo {
@@ -13,7 +14,7 @@
   }
 }
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,7 +23,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 .App-link {
   color: #61dafb;
@@ -35,4 +36,44 @@
   to {
     transform: rotate(360deg);
   }
+}
+.text-positive{
+  color:green;
+}
+.main{
+  height: calc(100vh - 108px);
+  overflow: auto;
+  /* padding-left: 15px; */
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+header,footer{
+  background-color: #ccc;
+  padding: 15px 0;
+  height: 54px;
+  text-align: center;
+  
+}
+
+.question{
+  padding: 15px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  transition: 0.5s ease all;
+}
+.valid-ans{
+  background-color: rgba(0, 128, 0,0.05);
+  border-color:  rgba(0, 128, 0,0.3);
+}
+.invalid-ans{
+  background-color: rgba(128, 0, 0,0.05);
+  border-color:  rgba(128, 0, 0,0.3);
+}
+.score{
+  position: fixed;
+  top:0;
+  right:0;
+  padding:6px 15px;
+  font-size: 14px;
+  line-height: 1.3;
 }
